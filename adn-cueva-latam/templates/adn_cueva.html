@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ADN CUEVA LATAM</title>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #00ffcc;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            padding: 40px;
+        }
+        .adn {
+            animation: giro 5s linear infinite;
+            width: 200px;
+            margin: 0 auto;
+        }
+        @keyframes giro {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        input, button {
+            padding: 10px;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧬 Escaneo de ADN CUEVA</h1>
+    <img class="adn" src="https://cdn.pixabay.com/photo/2013/07/12/19/22/dna-154005_1280.png" alt="ADN">
+    <p>Completa esta prueba para demostrar que tu ADN pertenece a la CUEVA LATAM.</p>
+
+    <form action="/guardar" method="POST">
+        <input type="text" name="discord_id" placeholder="Tu ID de Discord" required><br>
+        <input type="text" name="clave" placeholder="Palabra secreta que te identifica"><br>
+        <button type="submit">Enviar ADN</button>
+    </form>
+</body>
+</html>
